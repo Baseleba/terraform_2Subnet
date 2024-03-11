@@ -88,7 +88,7 @@ resource "aws_security_group" "webserver_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["108.73.21.244/32"] # Replace <your_ip> with your actual IP address
+    cidr_blocks = ["your_publicIP/32"] # Replace <your_ip> with your actual IP address
   }
 
   ingress {
